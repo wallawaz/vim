@@ -13,6 +13,8 @@ Plugin 'tyru/current-func-info.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'AndrewRadev/linediff.vim'
 Plugin 'beloglazov/vim-online-thesaurus'
+Plugin 'maksimr/vim-jsbeautify'
+"Plugin 'chrisbra/csv.vim'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'shmup/vim-sql-syntax'
 "Plugin 'Valloric/YouCompleteMe'
@@ -36,7 +38,7 @@ set syn=auto
 set clipboard=unnamedplus
 " vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 colorscheme slate
-" set list listchars=tab:»·,trail:·
+set list listchars=tab:>-
 set pastetoggle=<F2>
 
 " Enable folding with the spacebar
@@ -59,9 +61,9 @@ au BufRead,BufNewFile *.sql
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix |
-    \ setlocal foldmethod=marker
 
 set encoding=utf-8
+set fileencoding=utf-8
 let python_highlight_all=1
 syntax enable
 set nu
@@ -78,6 +80,6 @@ set foldlevelstart=1
 set foldlevel=99
 set laststatus=2
 set nowrap
-
+set foldmarker={{{,}}}
 
 imap <F6> with open("/home/bwallad/tmp/query", "w+") as fp: fp.write(meta.compile_statement(
