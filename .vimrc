@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'AndrewRadev/linediff.vim'
 Plugin 'beloglazov/vim-online-thesaurus'
 Plugin 'maksimr/vim-jsbeautify'
+Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'chrisbra/csv.vim'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'shmup/vim-sql-syntax'
@@ -83,3 +84,6 @@ set nowrap
 set foldmarker={{{,}}}
 
 imap <F6> with open("/home/bwallad/tmp/query", "w+") as fp: fp.write(meta.compile_statement(
+
+" WindowsTerminal workaround for VisualBlockMode
+nnoremap q <c-v>
