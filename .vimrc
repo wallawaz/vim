@@ -87,3 +87,4 @@ imap <F6> with open("/home/bwallad/tmp/query", "w+") as fp: fp.write(meta.compil
 
 " WindowsTerminal workaround for VisualBlockMode
 nnoremap q <c-v>
+set vb t_vb=
