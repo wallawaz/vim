@@ -26,6 +26,8 @@ Bundle 'shmup/vim-sql-syntax'
 "Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'ctrlpvim/ctrlp'
 
 " Other plugins where..
 call vundle#end()
@@ -86,5 +88,11 @@ set foldmarker={{{,}}}
 imap <F6> with open("/home/bwallad/tmp/query", "w+") as fp: fp.write(meta.compile_statement(
 
 " WindowsTerminal workaround for VisualBlockMode
-nnoremap q <c-v>
 set vb t_vb=
+
+" What was this one again???
+" nnoremap q <c-v>
+
+
+" Disable beep and Flash...
+set noeb
