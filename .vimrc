@@ -96,3 +96,6 @@ set vb t_vb=
 
 " Disable beep and Flash...
 set noeb
+
+" Highlight search results
+set hlsearch
